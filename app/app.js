@@ -99,7 +99,7 @@
         else if (i + COLUMNS < count) i += COLUMNS;
         break;
       case KEY.ENTER:
-        if (i < 0) openSettings();
+        if (i < 0) cycleTheme();
         else launch(settings.apps[i]);
         return;
       case KEY.BACK:
@@ -122,9 +122,27 @@
     showToast.timer = setTimeout(function () { toast.classList.remove('show'); }, 4000);
   }
 
-  function openSettings() {
-    if (!window.tizen) { showToast('Would open Settings'); return; }
-    tizen.application.launch('com.samsung.tv.settings', null, function () { showToast('Could not open Settings'); });
+  /* ---------- theme (gear button) ---------- */
+
+  var THEMES = ['midnight', 'graphite', 'ocean', 'ember'];
+  var THEME_KEY = 'portal.theme';
+
+  function applyTheme(name) {
+    document.body.setAttribute('data-theme', name);
+    try { localStorage.setItem(THEME_KEY, name); } catch (e) { /* storage unavailable */ }
+  }
+
+  function cycleTheme() {
+    var cur = document.body.getAttribute('data-theme') || THEMES[0];
+    var next = THEMES[(THEMES.indexOf(cur) + 1) % THEMES.length];
+    applyTheme(next);
+    showToast(next.charAt(0).toUpperCase() + next.slice(1));
+  }
+
+  function restoreTheme() {
+    var saved = null;
+    try { saved = localStorage.getItem(THEME_KEY); } catch (e) { /* ignore */ }
+    applyTheme(THEMES.indexOf(saved) >= 0 ? saved : THEMES[0]);
   }
 
   // Samsung store apps don't always accept their short ID in tizen.application.launch,
@@ -240,6 +258,7 @@
 
   /* ---------- boot ---------- */
 
+  restoreTheme();
   byId('title').textContent = settings.title || 'Home';
   renderTiles();
   renderClock();
