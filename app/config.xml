@@ -3,7 +3,7 @@
     <tizen:application id="TVHomeApp1.Home" package="TVHomeApp1" required_version="2.3"/>
     <content src="index.html"/>
     <feature name="http://tizen.org/feature/screen.size.normal.1080.1920"/>
-    <icon src="icon_16b9.png" width="1920" height="1080"/>
+    <icon src="icon_hub.png" width="512" height="423"/>
     <icon src="icon.png" width="1024" height="1024"/>
     <name>Aaron's TV Portal</name>
     <tizen:privilege name="http://tizen.org/privilege/application.launch"/>

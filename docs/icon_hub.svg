@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="423" viewBox="0 0 512 423">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a2033"/>
+      <stop offset="1" stop-color="#07080d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.38" r="0.65">
+      <stop offset="0" stop-color="#4f8cff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#4f8cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="badge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6aa4ff"/>
+      <stop offset="1" stop-color="#3a63e8"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.3"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="423" fill="url(#bg)"/>
+  <rect width="512" height="423" fill="url(#glow)"/>
+
+  <g transform="translate(256 170)">
+    <rect x="-96" y="-84" width="192" height="192" rx="46" fill="#000" opacity="0.45"/>
+    <rect x="-96" y="-96" width="192" height="192" rx="46" fill="url(#badge)"/>
+    <rect x="-96" y="-96" width="192" height="192" rx="46" fill="url(#shine)"/>
+    <rect x="-95" y="-95" width="190" height="190" rx="45" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2"/>
+    <text x="0" y="54" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="700" font-size="150" fill="#ffffff">A</text>
+  </g>
+
+  <text x="256" y="340" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="700" font-size="40" letter-spacing="-0.5" fill="#f2f4f8">Aaron's TV Portal</text>
+  <text x="256" y="376" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="500" font-size="15" letter-spacing="5" fill="#8e97ad">SAMSUNG TV HOME</text>
+</svg>
