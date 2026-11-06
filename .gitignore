@@ -1,0 +1,15 @@
+# Local config and secrets
+.env
+.tv_token
+
+# Build output
+*.wgt
+.buildResult/
+.sign/
+author-signature.xml
+signature1.xml
+
+# OS / editor
+.DS_Store
+.vscode/
+__pycache__/
