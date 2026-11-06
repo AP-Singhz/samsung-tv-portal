@@ -20,14 +20,14 @@
   <rect width="512" height="512" fill="url(#bg)"/>
   <rect width="512" height="512" fill="url(#glow)"/>
 
-  <g transform="translate(256 170)">
-    <rect x="-96" y="-84" width="192" height="192" rx="46" fill="#000" opacity="0.45"/>
-    <rect x="-96" y="-96" width="192" height="192" rx="46" fill="url(#badge)"/>
-    <rect x="-96" y="-96" width="192" height="192" rx="46" fill="url(#shine)"/>
-    <rect x="-95" y="-95" width="190" height="190" rx="45" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2"/>
-    <text x="0" y="54" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="700" font-size="150" fill="#ffffff">A</text>
+  <g transform="translate(256 150)">
+    <rect x="-108" y="-96" width="216" height="216" rx="52" fill="#000" opacity="0.45"/>
+    <rect x="-108" y="-108" width="216" height="216" rx="52" fill="url(#badge)"/>
+    <rect x="-108" y="-108" width="216" height="216" rx="52" fill="url(#shine)"/>
+    <rect x="-107" y="-107" width="214" height="214" rx="51" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2"/>
+    <text x="0" y="62" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="700" font-size="170" fill="#ffffff">A</text>
   </g>
 
-  <text x="256" y="340" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="700" font-size="40" letter-spacing="-0.5" fill="#f2f4f8">Aaron's TV Portal</text>
-  <text x="256" y="376" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="500" font-size="15" letter-spacing="5" fill="#8e97ad">SAMSUNG TV HOME</text>
+  <text x="256" y="330" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="700" font-size="64" letter-spacing="-1.5" fill="#ffffff">Aaron's</text>
+  <text x="256" y="396" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="700" font-size="64" letter-spacing="-1.5" fill="#ffffff">TV Portal</text>
 </svg>
