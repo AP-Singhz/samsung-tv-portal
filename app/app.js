@@ -244,6 +244,10 @@
   renderTiles();
   renderClock();
   document.addEventListener('keydown', onKey);
+  // The app stays alive while another app is in front; refresh when it comes back.
+  document.addEventListener('visibilitychange', function () {
+    if (!document.hidden) { renderClock(); refreshWeather(); }
+  });
   // Let the intro animation finish before touching the network.
   setTimeout(refreshWeather, 1200);
   setInterval(renderClock, 10 * 1000);
