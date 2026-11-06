@@ -21,6 +21,6 @@ cp -R "$ROOT/app/." "$BUILD/"
 "$TIZEN" package -t wgt -s "$PROFILE" -- "$BUILD"
 
 "$SDB" connect "$TV"
-"$TIZEN" install -n "$BUILD/Home.wgt" -s "$TV"
+"$TIZEN" install -n "$BUILD/Portal.wgt" -s "$TV"
 "$SDB" -s "$TV" shell 0 was_execute TVHomeApp1.Home
 echo "Installed and launched."
